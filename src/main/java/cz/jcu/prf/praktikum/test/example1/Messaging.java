@@ -17,7 +17,7 @@ public class Messaging {
 		
 		// Prepare sinks
 		MessageSink sink1 = new ConsoleMessageSink();
-		MessageSink sink2 = new FileMessageSink("C:\\Users\\UAI\\messages.txt");
+		MessageSink sink2 = new FileMessageSink(System.getProperty("user.home")+"/messages.txt");
 		
 		// configure server
 		MessageServer server = new MessageServer();
